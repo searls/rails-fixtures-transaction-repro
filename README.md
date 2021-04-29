@@ -1,24 +1,6 @@
-# README
+This Rails app reproduces an issue where it seems like fixtures are committed to
+the database even if `use_transactional_fixtures` is set to true.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. Setup with `./setup.sh`
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+2. Reproduce the issue with `./failing-repro-script.sh`
